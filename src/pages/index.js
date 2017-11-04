@@ -1,13 +1,40 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+const IndexPage = ({ data }) => {
+  const posts = data.allFile.edges.filter(({ node }) => node.childMarkdownRemark !== null)
+  console.log(posts);
+  return (
+    <div>
+      {posts.map(({ node }) =>
+        <div>
+          <h2>{node.childMarkdownRemark.frontmatter.headline}</h2>
+          <div 
+            key={node.id} 
+            dangerouslySetInnerHTML={{ __html: node.childMarkdownRemark.html }}
+          ></div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+export const query = graphql`
+query myQuery {
+  allFile {
+    edges {
+      node {
+        id
+        childMarkdownRemark {
+          frontmatter {
+            headline
+          }
+          html
+        }
+      }
+    }
+  }
+}
+`
 
 export default IndexPage
