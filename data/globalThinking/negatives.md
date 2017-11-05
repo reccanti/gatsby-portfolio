@@ -1,0 +1,4 @@
+---
+headline: Global Thinking
+---
+Before I left to do this co-op, a friend of mine gave me some advice. He told me to go in with an open mind. Be willing to learn. He also told me to get to know my coworkers, to do things with them and not shut myself away. This was great advice. I learned a lot and made some great friends while I was there. My biggest regret is that I wasn't able to do more. Despite some of my previous jobs, I was still a bit inexperienced, both as a programmer and professionally in general. I was nervous to ask questions, so I sometimes stumbled as a result. I'm probably better off for having this as a learning experience, but I think I could do better if I were to do it all over again.
