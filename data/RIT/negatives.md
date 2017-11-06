@@ -1,0 +1,4 @@
+---
+headline: RIT Student Worker
+---
+For the Summer and Fall after my Junior year of college, I worked as a student worker for RIT's Department of Interactive Games and Media. This job gave me a lot of freedom with my work, but I didn't always use it effectively. I was given the task to research or implement a system that advisors could use to update records in the database, essentially a SQL query builder. I ended up trying to hack a solution together myself, but I wasn't able to complete it by the time I left. The fact that I left the project without completing this and not on track for completion is something I'm not proud of.
