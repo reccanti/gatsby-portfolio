@@ -2,3 +2,4 @@
 headline: website learnVCS
 ---
 Having just come off a couple of co-ops and a few projects, I found that version control was an important part of my job. However, most of what I knew about version control came on-the-job and rarely from school. A couple of my friends also noticed this issue and teamed up to create a resource to fix this problem. The result was learnVCS, a collection of resources and information about various types of version control with an interactive diagram to visualize how these components work. Me and two other students worked together over the course of a semester to create this project as part of an independent study. I was the designer on this project, using Sketch to design page layouts and assets that could be implemented in SCSS or used in React components.
+<!-- end -->

@@ -2,6 +2,7 @@
 headline: "Mobile Game Swipe Rogue"
 ---
 Swipe Rogue was a project I worked on as the lead developer during my last semester at RIT. The goal of the project was to create a mobile game that was distilled a [Rogue-like](insert wikipedia link here) game into a form that could be enjoyed on mobile devices.
+<!-- end -->
 
 We only had one semester to work on the project, about 16 weeks. Even though we had the initial concept, we spent the first couple of weeks doing research, comparing it to other Rogue-inspired games like *The Binding of Isaac* and to other mobile games like *Tiny Dice Dungeon*. This allowed us to get a feel for how certain features could be adapted for the shift in platform.
 

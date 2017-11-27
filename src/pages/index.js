@@ -18,24 +18,21 @@ function filterPosts(items, nodeArray) {
 
 const work = {
   "cathedralCorporation": {
-    entry:"base"
+    entry:"customer"
   },
-  "RIT": {
-    entry:"base"
+  "ADS": {
+    entry:"customer"
   },
   "globalThinking": {
-    entry:"base"
+    entry:"stack"
   },
   "fitbit": {
-    entry:"base"
+    entry:"fast-pace"
   }
 }
 
 const projects = {
   "learnVCS": {
-    entry:"base"
-  },
-  "ADS": {
     entry:"base"
   },
   "inspire": {
@@ -48,15 +45,15 @@ const projects = {
 
 
 const IndexPage = ({ data }) => {
-  const workOrder = ["cathedralCorporation", "RIT", "globalThinking", "fitbit"]
+  const workOrder = ["fitbit", "globalThinking", "ADS", "cathedralCorporation"]
   const workPosts = filterPosts(work, data.allFile.edges)
 
-  const projectOrder = ["swipeRogue", "inspire", "learnVCS", "ADS"]
+  const projectOrder = ["swipeRogue", "inspire", "learnVCS"]
   const projectPosts = filterPosts(projects, data.allFile.edges)
 
   return (
     <div>
-      <h2>Work Experiene</h2>
+      <h2>Work Experience</h2>
       {workOrder.map((workName) =>
         <div key={workPosts[workName].id}>
           <h3>{workPosts[workName].childMarkdownRemark.frontmatter.headline}</h3>

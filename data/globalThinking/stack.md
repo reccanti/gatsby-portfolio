@@ -2,3 +2,4 @@
 headline: Global Thinking
 ---
 I had previously been working with code that had more-or-less been written from scratch. Global Thinking was the first place where I worked on a serious project that relied on a framework. Between June, 2016 and May, 2017, I worked with 8 other developers on projects using the Laravel, Magento, and Wordpress to develop web applications and websites. This was a larger team than I was used to working in, so we also needed more organization than I was used to. We used an Agile methodology to develop features in 2-week sprints, holding daily meetings to check in on progress. I was also introduced to more formal version control concepts. Using Git, we developed features on feature-branches and made pull requests that had to pass code-review before getting merged. All-in-all, I was working with a much more established team than I was used to, and it profoundly influenced how I think team development should work.
+<!-- end -->
