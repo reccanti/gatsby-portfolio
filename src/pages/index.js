@@ -53,15 +53,25 @@ const IndexPage = ({ data }) => {
 
   return (
     <div>
-      <h2>Work Experience</h2>
-      {workOrder.map((workName) =>
-        <div key={workPosts[workName].id}>
-          <h3>{workPosts[workName].childMarkdownRemark.frontmatter.headline}</h3>
-          <div 
-            dangerouslySetInnerHTML={{ __html: workPosts[workName].childMarkdownRemark.html }}
-          ></div>
-        </div>
-      )}
+
+      { /* about section */ }
+      <h1>Hi I'm Ben Wilcox, and I make cool stuff for the web</h1>
+      <p>I'm a developer at Fitbit currently based in Boston MA</p>
+      <h2>Find me at...</h2>
+      <ul>
+        <li>LinkedIn</li>
+        <li>GitHub</li>
+        <li>CodePen</li>
+      </ul>
+      <ul>
+        <li>You can read about some of the projects I've worked on here.</li>
+        <li>I've also worked on some smaller experiments, which you can see here.</li>
+        <li>You can read about my work experience here.</li>
+        <li>You can also find my resume here.</li>
+        <li>Want to get in touch? Email me at benjaminwilcox93@gmail.com.</li>
+      </ul>
+
+      { /* Projects section */ }
       <h2>Projects</h2>
       {projectOrder.map((projectName) =>
         <div key={projectPosts[projectName].id}>
@@ -71,6 +81,18 @@ const IndexPage = ({ data }) => {
           ></div>
         </div>
       )}
+
+      { /* Work Experience section */ }
+      <h2>Work Experience</h2>
+      {workOrder.map((workName) =>
+        <div key={workPosts[workName].id}>
+          <h3>{workPosts[workName].childMarkdownRemark.frontmatter.headline}</h3>
+          <div 
+            dangerouslySetInnerHTML={{ __html: workPosts[workName].childMarkdownRemark.html }}
+          ></div>
+        </div>
+      )}
+
     </div>
   )
 }
