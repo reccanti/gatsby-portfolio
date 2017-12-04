@@ -59,9 +59,9 @@ const IndexPage = ({ data }) => {
       <p>I'm a developer at Fitbit currently based in Boston MA</p>
       <h2>Find me at...</h2>
       <ul>
-        <li>LinkedIn</li>
-        <li>GitHub</li>
-        <li>CodePen</li>
+        <li><a href={data.site.siteMetadata.socialLinks.linkedin}>LinkedIn</a></li>
+        <li><a href={data.site.siteMetadata.socialLinks.github}>GitHub</a></li>
+        <li><a href={data.site.siteMetadata.socialLinks.codepen}>CodePen</a></li>
       </ul>
       <ul>
         <li>You can read about some of the projects I've worked on here.</li>
@@ -112,6 +112,16 @@ query myQuery {
           excerpt
           html
         }
+      }
+    }
+  }
+  site {
+    siteMetadata {
+      socialLinks {
+        email
+        linkedin
+        github
+        codepen
       }
     }
   }
