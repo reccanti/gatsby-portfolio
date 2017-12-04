@@ -1,6 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Ben Wilcox's Portfolio`,
+    socialLinks: {
+      email: `benjaminwilcox93@gmail.com`,
+      linkedin: `https://www.linkedin.com/in/benwilcox93`,
+      github: `https://github.com/reccanti`,
+      codepen: `https://codepen.io/reccanti`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-next`,
@@ -12,6 +18,11 @@ module.exports = {
         path: `${__dirname}/data`
       }
     },
-    `gatsby-transformer-remark`
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        excerpt_separator: `<!-- end -->`
+      }
+    }
   ]
 }
