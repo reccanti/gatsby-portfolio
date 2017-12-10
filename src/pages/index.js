@@ -55,6 +55,7 @@ const IndexPage = ({ data }) => {
     <div>
 
       { /* about section */ }
+      {/* 
       <h1>Hi I'm Ben Wilcox, and I make cool stuff for the web</h1>
       <p>I'm a developer at Fitbit currently based in Boston MA</p>
       <h2>Find me at...</h2>
@@ -70,28 +71,33 @@ const IndexPage = ({ data }) => {
         <li>You can also find my resume here.</li>
         <li>Want to get in touch? Email me at benjaminwilcox93@gmail.com.</li>
       </ul>
+      */ }
 
       { /* Projects section */ }
-      <h2>Projects</h2>
-      {projectOrder.map((projectName) =>
-        <div key={projectPosts[projectName].id}>
-          <h3>{projectPosts[projectName].childMarkdownRemark.frontmatter.headline}</h3>
-          <div 
-            dangerouslySetInnerHTML={{ __html: projectPosts[projectName].childMarkdownRemark.html }}
-          ></div>
-        </div>
-      )}
+      <section>
+        <h2>Projects</h2>
+        {projectOrder.map((projectName) =>
+          <div key={projectPosts[projectName].id}>
+            <h3>{projectPosts[projectName].childMarkdownRemark.frontmatter.headline}</h3>
+            <div 
+              dangerouslySetInnerHTML={{ __html: projectPosts[projectName].childMarkdownRemark.html }}
+            ></div>
+          </div>
+        )}
+      </section>
 
       { /* Work Experience section */ }
-      <h2>Work Experience</h2>
-      {workOrder.map((workName) =>
-        <div key={workPosts[workName].id}>
-          <h3>{workPosts[workName].childMarkdownRemark.frontmatter.headline}</h3>
-          <div 
-            dangerouslySetInnerHTML={{ __html: workPosts[workName].childMarkdownRemark.html }}
-          ></div>
-        </div>
-      )}
+      <section>
+        <h2>Work Experience</h2>
+        {workOrder.map((workName) =>
+          <div key={workPosts[workName].id}>
+            <h3>{workPosts[workName].childMarkdownRemark.frontmatter.headline}</h3>
+            <div 
+              dangerouslySetInnerHTML={{ __html: workPosts[workName].childMarkdownRemark.html }}
+            ></div>
+          </div>
+        )}
+      </section>
 
     </div>
   )

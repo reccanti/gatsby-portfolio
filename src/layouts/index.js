@@ -37,17 +37,17 @@ const Header = (props) => (
 const TemplateWrapper = ({ children, data }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header title={data.site.siteMetadata.title} />
+    {/* <Header title={data.site.siteMetadata.title} /> */}
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960,
+        maxWidth: 800,
         padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0,
       }}
