@@ -27,7 +27,7 @@ const work = {
     entry:"stack"
   },
   "fitbit": {
-    entry:"fast-pace"
+    entry:"collaboration"
   }
 }
 
