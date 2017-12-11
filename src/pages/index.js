@@ -55,23 +55,15 @@ const IndexPage = ({ data }) => {
     <div>
 
       { /* about section */ }
-      {/* 
-      <h1>Hi I'm Ben Wilcox, and I make cool stuff for the web</h1>
-      <p>I'm a developer at Fitbit currently based in Boston MA</p>
-      <h2>Find me at...</h2>
-      <ul>
-        <li><a href={data.site.siteMetadata.socialLinks.linkedin}>LinkedIn</a></li>
-        <li><a href={data.site.siteMetadata.socialLinks.github}>GitHub</a></li>
-        <li><a href={data.site.siteMetadata.socialLinks.codepen}>CodePen</a></li>
-      </ul>
-      <ul>
-        <li>You can read about some of the projects I've worked on here.</li>
-        <li>I've also worked on some smaller experiments, which you can see here.</li>
-        <li>You can read about my work experience here.</li>
-        <li>You can also find my resume here.</li>
-        <li>Want to get in touch? Email me at benjaminwilcox93@gmail.com.</li>
-      </ul>
-      */ }
+      <section class="about">
+        <h1>Ben Wilcox</h1>
+        <ul>
+          <li><a href={data.site.siteMetadata.socialLinks.linkedin}>LinkedIn</a></li>
+          <li><a href={data.site.siteMetadata.socialLinks.github}>GitHub</a></li>
+          <li><a href={data.site.siteMetadata.socialLinks.codepen}>CodePen</a></li>
+        </ul>
+        <p>Web developer, designer, and beanie enthusiast in Boston, MA</p>
+      </section>
 
       { /* Projects section */ }
       <section>
