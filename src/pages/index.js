@@ -62,7 +62,7 @@ const IndexPage = ({ data }) => {
           <li><a href={data.site.siteMetadata.socialLinks.github}>GitHub</a></li>
           <li><a href={data.site.siteMetadata.socialLinks.codepen}>CodePen</a></li>
         </ul>
-        <p>Web developer, designer, and beanie enthusiast in Boston, MA</p>
+        <p>Web developer, designer, and beanie enthusiast based in Boston, MA</p>
       </section>
 
       { /* Projects section */ }

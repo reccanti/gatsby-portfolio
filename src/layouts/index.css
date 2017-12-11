@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -141,6 +145,7 @@ section:not(.about) {
   text-align: center;
   margin-top: 2.45rem;
   margin-bottom: 2.45rem;
+  padding: 1.45rem;
 }
 .about ul {
   margin: 0;
@@ -148,11 +153,18 @@ section:not(.about) {
 }
 .about h1 {
   font-size: 4rem;
-  font-size: calc(1rem + 10vw);
+  font-size: calc(2rem + 3vw);
 }
 .about li {
   display: inline-block;
   padding: 0.5rem;
+}
+.about a {
+  text-decoration: none;
+  color: #90A1B0;
+}
+.about a:hover {
+  color: #6A7885;
 }
 
 @media (min-width: 1000px) {
@@ -163,6 +175,7 @@ section:not(.about) {
 
 @supports (display: flex) {
   .about {
+    margin: initial;
     display: flex;
     flex-direction: column;
     justify-content: center;
