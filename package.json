@@ -9,7 +9,9 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-react-next": "^1.0.4",
     "gatsby-source-filesystem": "^1.5.7",
-    "gatsby-transformer-remark": "^1.7.19"
+    "gatsby-transformer-json": "^1.0.14",
+    "gatsby-transformer-remark": "^1.7.19",
+    "gray-matter": "^3.1.1"
   },
   "keywords": [
     "gatsby"

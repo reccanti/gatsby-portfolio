@@ -11,6 +11,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-next`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

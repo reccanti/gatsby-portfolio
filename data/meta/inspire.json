@@ -1,0 +1,13 @@
+{
+    "entry_id": "inspire",
+    "name": "Inspire",
+    "startDate": "January 2016",
+    "endDate": "May 2016",
+    "role": "lead developer",
+    "tools": [
+	"C++",
+	"NodeJS",
+	"SocketIO",
+	"Canvas"
+    ]
+}
