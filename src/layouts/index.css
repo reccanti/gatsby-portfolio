@@ -28,7 +28,7 @@ body {
 h1 {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 1.45rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -166,6 +166,13 @@ section:not(.about) {
 .about a:hover {
   color: #6A7885;
 }
+.about img {
+    max-width: 250px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    border: 10px solid hsla(0, 0%, 0%, .8);
+    border-radius: 50%;
+}
 
 @media (min-width: 1000px) {
   .about h1 {
@@ -180,6 +187,5 @@ section:not(.about) {
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    height: 75vh;
   }
 }

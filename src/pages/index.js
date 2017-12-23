@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import logo from '../images/icon-final.svg'
 
 /**
  * Filter post data into a list in the specified order
@@ -75,9 +76,9 @@ const IndexPage = ({ data }) => {
 
       { /* about section */ }
       <section className="about">
+	<img src={logo} alt="My personal logo"/>
         <h1>Ben Wilcox</h1>
-
-          <ul>
+        <ul>
           <li><a href={data.site.siteMetadata.socialLinks.linkedin}>LinkedIn</a></li>
           <li><a href={data.site.siteMetadata.socialLinks.github}>GitHub</a></li>
           <li><a href={data.site.siteMetadata.socialLinks.codepen}>CodePen</a></li>

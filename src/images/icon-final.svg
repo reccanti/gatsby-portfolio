@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-final</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <clipPath id="path-1">
+            <path d="M303.12,0.11 C136.21,0.11 0.91,135.41 0.91,302.32 L605.33,302.32 C605.33,135.41 470.06,0.11 303.12,0.11 Z"></path>
+        </clipPath>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-final">
+            <rect id="Rectangle-path" fill="#004E53" fill-rule="nonzero" x="0.06" y="0.07" width="999.92" height="999.92"></rect>
+            <path d="M248.5,209.09 C-88.59,627.51 368.5,915.03 368.5,915.03 C368.5,915.03 796.5,936.03 870.5,568.03 C960.12,122.26 460.48,-54.03 248.5,209.09 Z" id="Shape" fill="#A04F18" fill-rule="nonzero"></path>
+            <rect id="Rectangle-path" fill="#F9B88C" fill-rule="nonzero" x="328.95" y="437.74" width="281.59" height="301.31"></rect>
+            <path d="M511.36,460.71 L511.36,82.63 C568.816423,99.2960916 628.854635,105.218551 688.46,100.1 C719.8492,97.3372757 750.889424,91.4856223 781.13,82.63 C797.76,116.86 511.36,460.71 511.36,460.71 Z" id="Shape" fill="#A04F18" fill-rule="nonzero"></path>
+            <path d="M514.64,423.41 L837.73,423.41 C834.09,389.31 819.67,297.25 746.17,213.41 C658.17,113.11 545.52,92.89 514.64,88.41 C525.27,98.61 586.04,158.93 586.04,255.91 C586.06,315.85 562.24,375.81 514.64,423.41 Z" id="Shape" fill="#F9B88C" fill-rule="nonzero"></path>
+            <path d="M607.36,423.41 L736.76,423.41 L736.76,331.21 C736.844148,266.541605 711.147871,204.507048 665.36,158.84 C570.27,63.75 416.17,63.64 320.94,158.52 C215.48,263.59 257.81,425.39 320.49,503.46 C357.57,549.64 403.69,568.92 464.42,594.31 C574.91,640.49 674.36,648.73 736.76,649.07 L736.76,558.07 C673.58,508.13 609.2,440.66 607.36,423.41 Z" id="Shape" fill="#FFDABF" fill-rule="nonzero"></path>
+            <path d="M191.32,584.35 C324.75,574.15 508.32,518.94 583.67,304.93 C608.77,233.62 616.67,167.41 611.35,107.64 C589.35,163.99 379.45,493.38 191.32,584.35 Z" id="Shape" fill="#A04F18" fill-rule="nonzero"></path>
+            <path d="M610.53,99.49 C456.14,57.4 295.72,95.49 204.45,200.19 C82.45,340.1 124.65,552.37 131.38,586.25 C132.85,593.63 134.25,599.77 135.27,604.08 C153.59,600.28 172.34,593.53 191.27,584.35 C379.4,493.35 589.27,163.99 611.27,107.64 L610.53,99.49 Z" id="Shape" stroke="#000000" stroke-width="0.812565403" fill="#000000" fill-rule="nonzero"></path>
+            <circle id="Oval" fill="#000000" fill-rule="nonzero" cx="658.04" cy="319" r="14.34"></circle>
+            <circle id="Oval" fill="#FFDABF" fill-rule="nonzero" cx="499.94" cy="387.15" r="73.96"></circle>
+            <circle id="Oval" fill="#000000" fill-rule="nonzero" cx="500.31" cy="437.74" r="14.34"></circle>
+            <g id="Body" transform="translate(168.000000, 688.000000)">
+                <g id="shirt" transform="translate(0.000000, 9.000000)">
+                    <g id="Group-2" clip-path="url(#path-1)">
+                        <!-- <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask> -->
+                        <!-- <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use> -->
+                        <path d="M303.12,0.11 C136.21,0.11 0.91,135.41 0.91,302.32 L605.33,302.32 C605.33,135.41 470.06,0.11 303.12,0.11 Z" fill="white"></path>
+                        <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" opacity="0.6" mask="url(#mask-2)" x="0.91" y="0.11" width="74.99" height="302.21"></rect>
+                        <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" opacity="0.6" mask="url(#mask-2)" x="530.34" y="0.11" width="74.99" height="302.21"></rect>
+                        <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" opacity="0.6" mask="url(#mask-2)" x="133.27" y="0.11" width="74.99" height="302.21"></rect>
+                        <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" opacity="0.6" mask="url(#mask-2)" x="265.63" y="0.11" width="74.99" height="302.21"></rect>
+                        <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" opacity="0.6" mask="url(#mask-2)" x="397.98" y="0.11" width="74.99" height="302.21"></rect>
+                        <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" opacity="0.6" mask="url(#mask-2)" transform="translate(303.050000, 37.605000) rotate(90.000000) translate(-303.050000, -37.605000) " x="265.555" y="-264.675" width="74.99" height="604.56"></rect>
+                        <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" opacity="0.6" mask="url(#mask-2)" transform="translate(303.050000, 169.955000) rotate(90.000000) translate(-303.050000, -169.955000) " x="265.555" y="-132.325" width="74.99" height="604.56"></rect>
+                        <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" opacity="0.6" mask="url(#mask-2)" transform="translate(303.060000, 302.315000) rotate(90.000000) translate(-303.060000, -302.315000) " x="265.565" y="0.035" width="74.99" height="604.56"></rect>
+                    </g>
+                </g>
+                <polygon id="collar" fill="#000000" fill-rule="nonzero" points="450.26 0.43 306.86 0.43 195.1 0.43 161.7 0.43 120.1 75.43 195.1 75.43 306.86 75.43 491.86 75.43"></polygon>
+            </g>
+            <rect id="filter" fill="#FFCE00" fill-rule="nonzero" opacity="0.05" x="0" y="1" width="1001.5" height="1001.5"></rect>
+        </g>
+    </g>
+</svg>
