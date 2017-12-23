@@ -95,7 +95,7 @@ const IndexPage = ({ data }) => {
 	      { projectPosts[projectName].tools ? (
 	      <ul>
 	        {projectPosts[projectName].tools.map(tool =>
-		  <li>{tool}</li>
+		  <li key={tool}>{tool}</li>
 	        )}
 	      </ul>
 	      ) : null }
