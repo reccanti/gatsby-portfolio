@@ -65,10 +65,10 @@ const projects = {
 
 const IndexPage = ({ data }) => {
  
-  const workOrder = ["fitbit", "globalThinking", "ADS", "cathedralCorporation"]
-  const workPosts = filterPosts(work, data.allFile.edges, data.allMetaJson.edges)
+  // const workOrder = ["fitbit", "globalThinking", "ADS", "cathedralCorporation"]
+  // const workPosts = filterPosts(work, data.allFile.edges, data.allMetaJson.edges)
 
-  const projectOrder = ["swipeRogue", "theVirtualHeart", "inspire", "learnVCS"]
+  const projectOrder = ["theVirtualHeart","learnVCS", "inspire", "swipeRogue"]
   const projectPosts = filterPosts(projects, data.allFile.edges, data.allMetaJson.edges)
   
   return (
@@ -83,23 +83,27 @@ const IndexPage = ({ data }) => {
           <li><a href={data.site.siteMetadata.socialLinks.github}>GitHub</a></li>
           <li><a href={data.site.siteMetadata.socialLinks.codepen}>CodePen</a></li>
         </ul>
-        <p>Web developer, designer, and beanie enthusiast based in Boston, MA</p>
+        <p>I'm a web developer, designer, and beanie enthusiast based in Boston, Massachusetts. Check out some of the projects I've worked on <a href="#projects">below!</a></p>
       </section>
 
       { /* Projects section */ }
-      <section>
+      <section className="projects" id="projects">
         <h2>Projects</h2>
         {projectOrder.map((projectName) =>
           <div key={projectPosts[projectName].id}>
             <h3>{projectPosts[projectName].childMarkdownRemark.frontmatter.headline}</h3>
-            <div dangerouslySetInnerHTML={{ __html: projectPosts[projectName].childMarkdownRemark.html }}></div>
-	      { projectPosts[projectName].tools ? (
-	      <ul>
-	        {projectPosts[projectName].tools.map(tool =>
-		  <li key={tool}>{tool}</li>
-	        )}
-	      </ul>
-	      ) : null }
+	    {/* div className="role">{ projectPosts[projectName].role }</div> */} 
+	    <div className="meta">
+		<div className="timeframe">{ `${projectPosts[projectName].startDate} - ${projectPosts[projectName].endDate}` }</div>
+		{ projectPosts[projectName].tools ? (
+		<ul className="tools">
+		    {projectPosts[projectName].tools.map(tool =>
+		    <li key={tool}>{tool}</li>
+		    )}
+		</ul>
+		) : null }
+	    </div>
+            <div className="description" dangerouslySetInnerHTML={{ __html: projectPosts[projectName].childMarkdownRemark.html }}></div>
           </div>
         )}
       </section>
@@ -126,6 +130,9 @@ query myQuery {
   allMetaJson {
     edges {
       node {
+        role
+        startDate
+        endDate
         tools
         entry_id
       }

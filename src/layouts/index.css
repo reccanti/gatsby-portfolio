@@ -141,11 +141,16 @@ section:not(.about) {
   padding: 1.45rem;
 }
 
+/* About Section */
 .about {
   text-align: center;
   margin-top: 2.45rem;
   margin-bottom: 2.45rem;
   padding: 1.45rem;
+}
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
 }
 .about ul {
   margin: 0;
@@ -188,4 +193,67 @@ section:not(.about) {
     justify-content: center;
     width: 100vw;
   }
+}
+
+/* Projects Section */
+
+.projects div > * {
+    margin: 0;
+}
+
+.projects div > * ~ * {
+    margin-top: 1rem;
+}
+
+.projects .meta > * {
+    margin-bottom: 0.3rem;
+}
+
+.projects div h3 {
+    text-align: center;
+}
+
+.projects .role {
+    text-align: center;
+}
+
+.projects .timeframe {
+    text-align: center;
+    font-style: italic;
+}
+
+.projects div .tools {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.projects div .tools li {
+    display: inline-block;
+    font-style: italic;
+}
+
+.projects div .tools li:not(:last-of-type):after {
+    content: "\2022";
+    margin: 0 0.5rem;
+}
+
+@supports (display: grid) {
+    .projects {
+	display: grid;
+	grid-gap: 1.5rem;
+	grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 600px) {
+	.projects {
+	    grid-template-columns: 1fr 1fr;
+	}
+
+	.projects h2 {
+	    grid-column: span 2;
+	}
+    } 
 }
