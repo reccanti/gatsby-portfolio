@@ -47,6 +47,7 @@ const work = {
     entry:"collaboration"
   }
 }
+
 const projects = {
   "learnVCS": {
     entry:"base"
@@ -62,6 +63,20 @@ const projects = {
   }
 }
 
+const codePens = {
+    "danceAllNight": {
+        entry:"base"
+    },
+    "rainbow": {
+        entry:"base"
+    },
+    "wave": {
+        entry:"base"
+    },
+    "orderedListHacks": {
+        entry:"base"
+    }
+}
 
 const IndexPage = ({ data }) => {
  
@@ -70,7 +85,10 @@ const IndexPage = ({ data }) => {
 
   const projectOrder = ["theVirtualHeart","learnVCS", "inspire", "swipeRogue"]
   const projectPosts = filterPosts(projects, data.allFile.edges, data.allMetaJson.edges)
-  
+
+  const codePenOrder = ["danceAllNight","rainbow","wave","orderedListHacks"]
+  const codePenPosts = filterPosts(codePens, data.allFile.edges, data.allMetaJson.edges)
+
   return (
     <div>
 
@@ -83,7 +101,7 @@ const IndexPage = ({ data }) => {
           <li><a href={data.site.siteMetadata.socialLinks.github}>GitHub</a></li>
           <li><a href={data.site.siteMetadata.socialLinks.codepen}>CodePen</a></li>
         </ul>
-        <p>I'm a web developer, designer, and beanie enthusiast based in Boston, Massachusetts. Check out some of the projects I've worked on <a href="#projects">below!</a></p>
+        <p>I'm a web developer, designer, and beanie enthusiast based in Boston, Massachusetts. Check out some of the projects I've worked on <a href="#projects">below!</a> Want to get in touch? Email me <a href="mailto:reccanti@gmail.com">at this address</a> or send me a message on LinkedIn.</p>
       </section>
 
       { /* Projects section */ }
@@ -104,6 +122,27 @@ const IndexPage = ({ data }) => {
 		) : null }
 	    </div>
             <div className="description" dangerouslySetInnerHTML={{ __html: projectPosts[projectName].childMarkdownRemark.html }}></div>
+          </div>
+        )}
+      </section>
+      
+      { /* CodePen section */ }
+      <section className="projects" id="codePen">
+        <h2>CodePen Experiments</h2>
+        {codePenOrder.map((projectName) =>
+          <div key={codePenPosts[projectName].id}>
+            <h3>{codePenPosts[projectName].childMarkdownRemark.frontmatter.headline}</h3>
+	    {/* div className="role">{ projectPosts[projectName].role }</div> */} 
+	    <div className="meta">
+		{ codePenPosts[projectName].tools ? (
+		<ul className="tools">
+		    {codePenPosts[projectName].tools.map(tool =>
+		    <li key={tool}>{tool}</li>
+		    )}
+		</ul>
+		) : null }
+	    </div>
+            <div className="description" dangerouslySetInnerHTML={{ __html: codePenPosts[projectName].childMarkdownRemark.html }}></div>
           </div>
         )}
       </section>

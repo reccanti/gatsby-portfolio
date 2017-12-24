@@ -148,29 +148,36 @@ section:not(.about) {
   margin-bottom: 2.45rem;
   padding: 1.45rem;
 }
+
 .about p {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 }
+
 .about ul {
   margin: 0;
   padding: 0;
 }
+
 .about h1 {
   font-size: 4rem;
   font-size: calc(2rem + 3vw);
 }
+
 .about li {
   display: inline-block;
   padding: 0.5rem;
 }
+
 .about a {
   text-decoration: none;
   color: #90A1B0;
 }
+
 .about a:hover {
   color: #6A7885;
 }
+
 .about img {
     max-width: 250px;
     margin: 0 auto;
@@ -238,6 +245,15 @@ section:not(.about) {
 .projects div .tools li:not(:last-of-type):after {
     content: "\2022";
     margin: 0 0.5rem;
+}
+
+.projects a {
+  text-decoration: none;
+  color: #90A1B0;
+}
+
+.projects a:hover {
+  color: #6A7885;
 }
 
 @supports (display: grid) {

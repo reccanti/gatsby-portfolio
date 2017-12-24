@@ -1,0 +1,8 @@
+{
+    "name": "Dance All Night",
+    "entry_id": "danceAllNight",
+    "tools": [
+        "SVG",
+        "GSAP"
+    ]
+}

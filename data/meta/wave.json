@@ -1,0 +1,8 @@
+{
+    "name": "Wave",
+    "entry_id": "wave",
+    "tools": [
+        "JavaScript",
+        "Canvas"
+    ]
+}
