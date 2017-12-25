@@ -4,6 +4,10 @@
     "startDate": "January 2017",
     "endDate": "May 2017",
     "role": "Lead Developer",
+    "thumbnail": {
+        "url": "SwipeRogue-title.png",
+        "alt": "Title screen of Swipe Rogue"
+    },
     "tools": [
 	"Unity",
 	"C#"

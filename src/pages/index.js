@@ -107,8 +107,10 @@ const IndexPage = ({ data }) => {
       { /* Projects section */ }
       <section className="projects" id="projects">
         <h2>Projects</h2>
+        <p>I mostly work do web development, but I also like to branch out and explore other aspects of software development. Below are some of the larger software projects I've worked on.</p>
         {projectOrder.map((projectName) =>
           <div key={projectPosts[projectName].id}>
+            { projectPosts[projectName].thumbnail ? (<img src={projectPosts[projectName].thumbnail.url} alt={projectPosts[projectName].thumbnail.alt} />) : null }
             <h3>{projectPosts[projectName].childMarkdownRemark.frontmatter.headline}</h3>
 	    {/* div className="role">{ projectPosts[projectName].role }</div> */} 
 	    <div className="meta">
@@ -129,6 +131,7 @@ const IndexPage = ({ data }) => {
       { /* CodePen section */ }
       <section className="projects" id="codePen">
         <h2>CodePen Experiments</h2>
+        <p>I like to explore new ideas and technology on CodePen. Below are some of my more popular and interesting pens.</p>
         {codePenOrder.map((projectName) =>
           <div key={codePenPosts[projectName].id}>
             <h3>{codePenPosts[projectName].childMarkdownRemark.frontmatter.headline}</h3>
@@ -174,6 +177,10 @@ query myQuery {
         endDate
         tools
         entry_id
+        thumbnail {
+            url
+            alt
+        }
       }
     }  
   }
