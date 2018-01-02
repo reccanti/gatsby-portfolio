@@ -1,6 +1,7 @@
 {
     "name": "Dance All Night",
     "entry_id": "danceAllNight",
+    "slug": "PqrLNa",
     "tools": [
         "SVG",
         "GSAP"

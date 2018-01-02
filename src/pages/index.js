@@ -90,80 +90,82 @@ const IndexPage = ({ data }) => {
   const codePenPosts = filterPosts(codePens, data.allFile.edges, data.allMetaJson.edges)
 
   return (
-    <div>
+      <div>
 
-      { /* about section */ }
-      <section className="about">
-	<img src={logo} alt="My personal logo"/>
-        <h1>Ben Wilcox</h1>
-        <ul>
-          <li><a href={data.site.siteMetadata.socialLinks.linkedin}>LinkedIn</a></li>
-          <li><a href={data.site.siteMetadata.socialLinks.github}>GitHub</a></li>
-          <li><a href={data.site.siteMetadata.socialLinks.codepen}>CodePen</a></li>
-        </ul>
-        <p>I'm a web developer, designer, and beanie enthusiast based in Boston, Massachusetts. Check out some of the projects I've worked on <a href="#projects">below!</a> Want to get in touch? Email me <a href="mailto:reccanti@gmail.com">at this address</a> or send me a message on LinkedIn.</p>
-      </section>
+          { /* about section */ }
+          <section className="about">
+	      <img src={logo} alt="My personal logo"/>
+              <h1>Ben Wilcox</h1>
+              <ul>
+                  <li><a href={data.site.siteMetadata.socialLinks.linkedin}>LinkedIn</a></li>
+                  <li><a href={data.site.siteMetadata.socialLinks.github}>GitHub</a></li>
+                  <li><a href={data.site.siteMetadata.socialLinks.codepen}>CodePen</a></li>
+              </ul>
+              <p>I'm a web developer, designer, and beanie enthusiast based in Boston, Massachusetts. Check out some of the projects I've worked on <a href="#projects">below!</a> Want to get in touch? Email me <a href="mailto:reccanti@gmail.com">at this address</a> or send me a message on LinkedIn.</p>
+          </section>
 
-      { /* Projects section */ }
-      <section className="projects" id="projects">
-        <h2>Projects</h2>
-        <p>I mostly work do web development, but I also like to branch out and explore other aspects of software development. Below are some of the larger software projects I've worked on.</p>
-        {projectOrder.map((projectName) =>
-          <div key={projectPosts[projectName].id}>
-            <h3>{projectPosts[projectName].childMarkdownRemark.frontmatter.headline}</h3>
-	    {/* div className="role">{ projectPosts[projectName].role }</div> */} 
-	    <div className="meta">
-		<div className="timeframe">{ `${projectPosts[projectName].startDate} - ${projectPosts[projectName].endDate}` }</div>
-		{ projectPosts[projectName].tools ? (
-		<ul className="tools">
-		    {projectPosts[projectName].tools.map(tool =>
-		    <li key={tool}>{tool}</li>
-		    )}
-		</ul>
-		) : null }
-	    </div>
-            <div className="description" dangerouslySetInnerHTML={{ __html: projectPosts[projectName].childMarkdownRemark.html }}></div>
-            {projectPosts[projectName].outerLink ? (<a className="outsideLink" href={projectPosts[projectName].outerLink}>View Project</a>) : null}
-          </div>
-        )}
-      </section>
+          { /* Projects section */ }
+          <section className="projects" id="projects">
+              <h2>Projects</h2>
+              <p>I mostly work do web development, but I also like to branch out and explore other aspects of software development. Below are some of the larger software projects I've worked on.</p>
+              {projectOrder.map((projectName) =>
+                  <div key={projectPosts[projectName].id}>
+                      <h3>{projectPosts[projectName].childMarkdownRemark.frontmatter.headline}</h3>
+	              {/* div className="role">{ projectPosts[projectName].role }</div> */} 
+	          <div className="meta">
+		      <div className="timeframe">{ `${projectPosts[projectName].startDate} - ${projectPosts[projectName].endDate}` }</div>
+		      { projectPosts[projectName].tools ? (
+		            <ul className="tools">
+		                {projectPosts[projectName].tools.map(tool =>
+		                    <li key={tool}>{tool}</li>
+		                )}
+		            </ul>
+		      ) : null }
+	          </div>
+                  <div className="description" dangerouslySetInnerHTML={{ __html: projectPosts[projectName].childMarkdownRemark.html }}></div>
+                  {projectPosts[projectName].outerLink ? (<a className="outsideLink" href={projectPosts[projectName].outerLink}>View Project</a>) : null}
+      </div>
+              )}
+          </section>
+          
+          { /* CodePen section */ }
+          <section className="projects" id="codePen">
+              <h2>CodePen Experiments</h2>
+              <p>I like to explore new ideas and technology on CodePen. Below are some of my more popular and interesting pens.</p>
+              {codePenOrder.map((projectName) =>
+                  <div key={codePenPosts[projectName].id}>
+                      <p data-height="300" data-theme-id="25581" data-slug-hash={codePenPosts[projectName].slug} data-default-tab="result" data-user="reccanti" data-embed-version="2" data-pen-title={codePenPosts[projectName].childMarkdownRemark.frontmatter.headline} className="codepen">See the Pen <a href={`https://codepen.io/reccanti/pen/${codePenPosts[projectName].slug}/`}>{codePenPosts[projectName].childMarkdownRemark.frontmatter.headline}</a> by B Wilcox (<a href="https://codepen.io/reccanti">@reccanti</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                      <h3>{codePenPosts[projectName].childMarkdownRemark.frontmatter.headline}</h3>
+	              {/* div className="role">{ projectPosts[projectName].role }</div> */} 
+                  <div className="meta">
+                      { codePenPosts[projectName].tools ? (
+                            <ul className="tools">
+                                {codePenPosts[projectName].tools.map(tool =>
+                                    <li key={tool}>{tool}</li>
+                                )}
+                            </ul>
+                      ) : null }
+                  </div>
+                  <div className="description" dangerouslySetInnerHTML={{ __html: codePenPosts[projectName].childMarkdownRemark.html }}></div>
+      </div>
+              )}
       
-      { /* CodePen section */ }
-      <section className="projects" id="codePen">
-        <h2>CodePen Experiments</h2>
-        <p>I like to explore new ideas and technology on CodePen. Below are some of my more popular and interesting pens.</p>
-        {codePenOrder.map((projectName) =>
-          <div key={codePenPosts[projectName].id}>
-            <h3>{codePenPosts[projectName].childMarkdownRemark.frontmatter.headline}</h3>
-	    {/* div className="role">{ projectPosts[projectName].role }</div> */} 
-	    <div className="meta">
-		{ codePenPosts[projectName].tools ? (
-		<ul className="tools">
-		    {codePenPosts[projectName].tools.map(tool =>
-		    <li key={tool}>{tool}</li>
-		    )}
-		</ul>
-		) : null }
-	    </div>
-            <div className="description" dangerouslySetInnerHTML={{ __html: codePenPosts[projectName].childMarkdownRemark.html }}></div>
-          </div>
-        )}
-      </section>
-
-      { /* Work Experience section */ }
-      { /* <section>
-        <h2>Work Experience</h2>
-        {workOrder.map((workName) =>
-          <div key={workPosts[workName].id}>
-            <h3>{workPosts[workName].childMarkdownRemark.frontmatter.headline}</h3>
-            <div 
-              dangerouslySetInnerHTML={{ __html: workPosts[workName].childMarkdownRemark.html }}
-            ></div>
-          </div>
-        )}
-      </section> */ }
-      
-    </div>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+          </section>
+          { /* Work Experience section */ }
+          { /* <section>
+               <h2>Work Experience</h2>
+               {workOrder.map((workName) =>
+               <div key={workPosts[workName].id}>
+               <h3>{workPosts[workName].childMarkdownRemark.frontmatter.headline}</h3>
+               <div 
+               dangerouslySetInnerHTML={{ __html: workPosts[workName].childMarkdownRemark.html }}
+               ></div>
+               </div>
+               )}
+               </section> */ }
+          
+      </div>
   )
 }
 
@@ -178,6 +180,7 @@ query myQuery {
         tools
         entry_id
         outerLink
+        slug
         thumbnail {
             url
             alt
