@@ -15,6 +15,7 @@ body {
 
 body {
   color: hsla(0, 0%, 0%, 0.8);
+  line-height: 1.5;
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -226,6 +227,31 @@ section:not(.about) {
     height: auto;
 }
 
+.projects > div {
+    /* padding: 1.25rem; */
+    margin-top: 2rem;
+}
+
+.projects > div .outsideLink {
+    display: inline-block;
+    padding: 0.5rem;
+    color: hsla(0, 0%, 0%, .8);
+    border: 2px solid hsla(0, 0%, 0%, .8);
+}
+
+.projects > div .outsideLink:hover {
+    background-color: hsla(0, 0%, 0%, .8);
+    color: white;
+}
+
+/* .projects > div:nth-of-type(odd) { */
+/*     background-color: hsla(0, 0%, 0%, .8); */
+/*     color: hsla(0, 0%, 96%, 1); */
+/* } */
+
+.projects > div:nth-of-type(even) {
+    /* background-color: hsla(0, 0%, 0%, .2); */
+}
 /* .projects div h3 { */
 /*     text-align: center; */
 /* } */

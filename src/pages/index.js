@@ -110,7 +110,6 @@ const IndexPage = ({ data }) => {
         <p>I mostly work do web development, but I also like to branch out and explore other aspects of software development. Below are some of the larger software projects I've worked on.</p>
         {projectOrder.map((projectName) =>
           <div key={projectPosts[projectName].id}>
-            { projectPosts[projectName].thumbnail ? (<img src={projectPosts[projectName].thumbnail.url} alt={projectPosts[projectName].thumbnail.alt} />) : null }
             <h3>{projectPosts[projectName].childMarkdownRemark.frontmatter.headline}</h3>
 	    {/* div className="role">{ projectPosts[projectName].role }</div> */} 
 	    <div className="meta">
@@ -124,6 +123,7 @@ const IndexPage = ({ data }) => {
 		) : null }
 	    </div>
             <div className="description" dangerouslySetInnerHTML={{ __html: projectPosts[projectName].childMarkdownRemark.html }}></div>
+            {projectPosts[projectName].outerLink ? (<a className="outsideLink" href={projectPosts[projectName].outerLink}>View Project</a>) : null}
           </div>
         )}
       </section>
@@ -177,6 +177,7 @@ query myQuery {
         endDate
         tools
         entry_id
+        outerLink
         thumbnail {
             url
             alt

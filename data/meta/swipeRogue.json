@@ -4,6 +4,7 @@
     "startDate": "January 2017",
     "endDate": "May 2017",
     "role": "Lead Developer",
+    "outerLink": "https://github.com/reccanti/swipe-rogue",
     "thumbnail": {
         "url": "SwipeRogue-title.png",
         "alt": "Title screen of Swipe Rogue"

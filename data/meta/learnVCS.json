@@ -4,6 +4,7 @@
     "startDate": "September 2015",
     "endDate": "December 2015",
     "role": "Designer",
+    "outerLink": "https://learnVCS.github.io",
     "thumbnail": {
         "url": "learnVCS-mockup.png",
         "alt": "Initial Sketch Mockups of the learnVCS graph"
