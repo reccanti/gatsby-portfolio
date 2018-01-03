@@ -35,19 +35,20 @@ const Header = (props) => (
 )
 
 const TemplateWrapper = ({ children, data }) => (
-  <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    {/* <Header title={data.site.siteMetadata.title} /> */}
     <div>
-      {children()}
+        <Helmet>
+            <title>{data.site.siteMetadata.title}</title>
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+            <link rel="manifest" href="/manifest.json"/>
+            <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+            <meta name="theme-color" content="#ffffff"/>
+        </Helmet>
+        <div>
+            {children()}
+        </div>
     </div>
-  </div>
 )
 
 TemplateWrapper.propTypes = {
