@@ -11,6 +11,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-next`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+          trackingId: "UA-69058558-2",
+          anonymize: true
+      }
+    },
     `gatsby-transformer-json`,
     `gatsby-image`,
     {
