@@ -101,13 +101,13 @@ const IndexPage = ({ data }) => {
                   <li><a href={data.site.siteMetadata.socialLinks.github}>GitHub</a></li>
                   <li><a href={data.site.siteMetadata.socialLinks.codepen}>CodePen</a></li>
               </ul>
-              <p>I'm a web developer, designer, and beanie enthusiast based in Boston, Massachusetts. Check out some of the projects I've worked on <a href="#projects">below!</a> Want to get in touch? Email me <a href="mailto:reccanti@gmail.com">at this address</a> or send me a message on LinkedIn.</p>
+              <p>I'm a web developer, designer, and beanie enthusiast based in Boston, Massachusetts.  Check out some of the projects I've worked on <a href="#projects">below</a>! Want to get in touch? <a href="mailto:reccanti@gmail.com">Email me at this address</a>.</p>
           </section>
 
           { /* Projects section */ }
           <section className="projects" id="projects">
               <h2>Projects</h2>
-              <p>I mostly work do web development, but I also like to branch out and explore other aspects of software development. Below are some of the larger software projects I've worked on.</p>
+              <p>I do a lot of web development, but I like to explore other aspects of software development as well.  Below are some of the larger software projects I've worked on.</p>
               {projectOrder.map((projectName) =>
                   <div key={projectPosts[projectName].id}>
                       <h3>{projectPosts[projectName].childMarkdownRemark.frontmatter.headline}</h3>
