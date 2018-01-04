@@ -100,8 +100,9 @@ const IndexPage = ({ data }) => {
                   <li><a href={data.site.siteMetadata.socialLinks.linkedin}>LinkedIn</a></li>
                   <li><a href={data.site.siteMetadata.socialLinks.github}>GitHub</a></li>
                   <li><a href={data.site.siteMetadata.socialLinks.codepen}>CodePen</a></li>
+                  <li><a href={data.site.siteMetadata.socialLinks.email}>Email</a></li>
               </ul>
-              <p>I'm a web developer, designer, and beanie enthusiast based in Boston, Massachusetts.  Check out some of the projects I've worked on <a href="#projects">below</a>! Want to get in touch? <a href="mailto:reccanti@gmail.com">Email me at this address</a>.</p>
+              <p>I'm a web developer, designer, and beanie enthusiast based in Boston, Massachusetts.  Check out some of the projects I've worked on below! Want to get in touch? Just send me an email at the address above.</p>
           </section>
 
           { /* Projects section */ }
