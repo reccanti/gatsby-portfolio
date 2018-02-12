@@ -19,6 +19,7 @@ module.exports = {
       }
     },
     `gatsby-transformer-json`,
+    `gatsby-plugin-sass`,
     `gatsby-image`,
     {
       resolve: `gatsby-source-filesystem`,

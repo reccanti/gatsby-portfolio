@@ -2,6 +2,22 @@
 title: "WAVE"
 category: "Colors"
 date: "February 08, 2018"
+colors:
+    -
+        color: "#EEFFFF"
+        width: 8
+    -
+        color: "#27E0E0"
+        width: 5
+    -
+        color: "#1195A8"
+        width: 3
+    -
+        color: "#1A3145"
+        width: 2
+    -
+        color: "#FF2F4A"
+        width: 1
 ---
 
 I'm looking for ways to improve my art and design skills, and maybe get better at React while I'm at it. I read an article on smashing magazine that recommended trying to create a color scheme every day, so I decided to try it out for a bit.

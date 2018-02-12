@@ -15,7 +15,7 @@ function filterPosts(items, nodeArray, metaArray) {
   // make a list of item html in the specified order
   let compiledItems = nodeArray.reduce((accumulator, value) => {
     const { node } = value
-    if (items[node.portfolio_entry]) {
+    if (items[node.portfolio_entry] && node.portfolio_entry !== "posts") {
       if (items[node.portfolio_entry].entry === node.name) {
         accumulator[node.portfolio_entry] = node
       }
@@ -79,8 +79,6 @@ const codePens = {
         entry:"base"
     }
 }
-
-console.log(styles)
 
 const IndexPage = ({ data }) => {
  
@@ -194,7 +192,14 @@ query myQuery {
       }
     }  
   }
-  allFile(filter:{name:{ne:".DS_Store"}}) {
+  allFile(filter:{
+    name:{
+      ne:".DS_Store"
+    },
+    relativeDirectory:{
+      ne:"posts"
+    }
+  }) {
     edges {
       node {
         id

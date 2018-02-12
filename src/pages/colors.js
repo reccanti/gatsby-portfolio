@@ -1,20 +1,20 @@
 import React from 'react' 
+import PaletteEntry from '../components/palette-blog'
+
+import styles from './colors.module.scss'
 
 const ColorPage = ({ data }) => {
 
     const { edges: entries } = data.allMarkdownRemark
 
     return (
-        <main>
+        <main className={styles.colorPage}>
             <h1>Colors</h1>
             <ul>
               {entries.map(({ node: entry }) => (
-                  <article>
-                    <h2>{entry.frontmatter.title}</h2>
-                    <p/>
-                        Hello
-                    <p/>
-                  </article>
+                <li key={entry.id}>
+                    <PaletteEntry entry={entry}/>
+                </li>
               ))}
             </ul>
         </main>
@@ -32,10 +32,17 @@ query colorBlogQuery {
   }) {
     edges {
       node {
+        id
         frontmatter {
           category
           title
+          date
+          colors {
+            color
+            width
+          }
         }
+        html
       }
     }
   }
