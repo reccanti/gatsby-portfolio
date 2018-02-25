@@ -1,7 +1,7 @@
 ---
 title: "WAVE"
 category: "Colors"
-date: "February 08, 2018"
+date: "February 25, 2018"
 colors:
     -
         color: "#EEFFFF"
@@ -20,6 +20,8 @@ colors:
         width: 1
 ---
 
-I'm looking for ways to improve my art and design skills, and maybe get better at React while I'm at it. I read an article on smashing magazine that recommended trying to create a color scheme every day, so I decided to try it out for a bit.
+I'm looking for ways to improve my art and design skills. I was reading an [article about color theory on Smashing Magazine](https://www.smashingmagazine.com/2010/02/color-theory-for-designer-part-3-creating-your-own-color-palettes/) that suggested creating a color scheme every day, so I decided to try that out for a bit.
 
-This palette is inspired by what I've been watching recently. I've been rewatching Yu Yu Hakusho and have been in awe of the colors they use. In addition, I've been watching a lot of videos from the channel Artzie Music, which has a lot of looping images from cell-animated anime. I collected images from a lot of cell-animated anime series and put them in a Sketch file. Then, I tried to sample the most prominent colors from each of them, then tried to construct a color palatte from that, making some minor tweaks so that they work well together. I tried to use a complementary color scheme, with shades of blue contrasting with the red accent color. 
+This palette is inspired by classic anime, when they still used cels. I've been rewatching Yu Yu Hakusho, and I've been impressed by it's bright and bold colors. In addition, I've been watching a lot of videos from the [Artzie Music YouTube channel](https://www.youtube.com/artziemusic), which often features music set to looping videos from different classic anime series.
+
+To make this palette, I collected screenshots from these anime as I watched them and looked for similar images from other series online. I put these images in a Sketch file and sampled the most prominent colors from each of them. Once I had these colors, I started trying to combine them, making minor tweaks so that they worked well together. For this one, I tried to use a complementary scheme with shades of blue contrasting with the red accent color.
