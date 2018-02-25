@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import SVG from '../svg/SVG'
 
 /**
  * Defines an object that will represent a single
@@ -18,7 +19,7 @@ Color.defaultProps = {
  * Defines a Palette object, which is an 
  * SVG wrapper that holds Color objects.
  */
-const Palette = ({ children, ...props }) => {
+const Palette = ({ children, title, ...props }) => {
 
     /*
      * Get the total size of the palette
@@ -51,15 +52,31 @@ const Palette = ({ children, ...props }) => {
               )
           })
 
+    const colors = React.Children
+        .map(children, child => child.props.hex)
+
+    let paletteDescription = `A color palette consisting of: `
+    colors.forEach(color => {
+        paletteDescription += `${color}, `
+    });
+
     return (
-        <svg
+        <SVG
+            title={title}
+            description={paletteDescription}
             {...props}
+            role="img"
             viewBox={`0 0 ${size} 1`}
             preserveAspectRatio="none"
         >
             {updatedChildren}
-        </svg>
+        </SVG>
     )
+}
+
+Palette.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired
 }
 
 export {Palette, Color}

@@ -5,7 +5,7 @@ import {Color, Palette} from './palette'
 const PaletteBlogEntry = ({ entry }) => {
     return (
         <article className={styles.paletteBlog}>
-            <Palette width={500} height={500}>
+            <Palette width={500} height={500} title={entry.frontmatter.title}>
                 {entry.frontmatter.colors.map(({color, width}) => (
                     <Color hex={color} size={width} />
                 ))}
