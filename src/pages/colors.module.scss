@@ -1,25 +1,91 @@
+$text-color: #666666;
+$header-color: #000000;
+
 .colorPage {
-    h1 {
-        text-align: center;
-        font-weight: bold;
+    padding: 0 3.5rem;
+    margin: 0;
 
-        font-family: sans-serif;
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 
-        line-height: 1.5;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-        word-wrap: break-word;
-        font-kerning: normal;
-        -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-        -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-        -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-        font-feature-settings: "kern", "liga", "clig", "calt";
+    word-wrap: break-word;
+    font-kerning: normal;
+    -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+    -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+    font-feature-settings: "kern", "liga", "clig", "calt";
+
+    header {
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            color: $text-color;
+        }
+
+        * + * {
+            margin-top: 1.5em;
+        } 
     }
 
     ul {
         list-style-type: none; 
         padding: 0;
+        margin: 0;
+    }
+
+    footer {
+        padding: 1.5rem;
+        text-align: center;
+        color: $text-color
+    }
+}
+
+@supports (display: grid) {
+    .colorPage {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "feed"
+            "footer";
+        grid-gap: 3rem;
+    }
+
+    @media (min-width: 600px) {
+        .colorPage {
+            grid-template-areas:
+                "header ."
+                "feed feed"
+                "footer footer";
+
+            grid-template-columns: 1fr 1fr;
+
+            header {
+                grid-area: header;
+
+                h1 {
+                    text-align: right;
+                }
+
+                p {
+                    text-align: right;
+                }
+            }
+
+            ul {
+                grid-area: feed;
+            }
+
+            footer {
+                grid-area: footer;
+            }
+        }
     }
 }
