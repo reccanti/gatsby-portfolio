@@ -49,6 +49,12 @@ $serif-font-stack: georgia, serif;
             font-family: $sans-font-stack;
         }
 
+        ul {
+            li {
+                margin-top: .75em;
+            }
+        }
+
     }
 
     .palette {
