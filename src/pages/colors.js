@@ -26,7 +26,7 @@ const ColorPage = ({ data }) => {
 
 export const query = graphql`
   query colorBlogQuery {
-    allMarkdownRemark(filter: { frontmatter: { category: { eq: "Colors" } } }) {
+    allMarkdownRemark(filter: { frontmatter: { category: { eq: "Colors" } } }, sort: { fields:[frontmatter___date], order:DESC}) {
       edges {
         node {
           id

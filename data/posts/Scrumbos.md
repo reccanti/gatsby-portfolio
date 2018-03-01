@@ -1,7 +1,7 @@
 ---
 title: "Scrumbos"
 category: "Colors"
-date: "February 26, 2018"
+date: "2018-02-26"
 colors:
     -
         color: "#EE89B5"

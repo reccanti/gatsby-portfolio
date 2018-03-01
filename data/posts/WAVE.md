@@ -1,7 +1,7 @@
 ---
 title: "WAVE"
 category: "Colors"
-date: "February 25, 2018"
+date: "2018-02-25"
 colors:
     -
         color: "#EEFFFF"
