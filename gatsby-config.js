@@ -18,6 +18,7 @@ module.exports = {
           anonymize: true
       }
     },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-json`,
     `gatsby-plugin-sass`,
     `gatsby-image`,
