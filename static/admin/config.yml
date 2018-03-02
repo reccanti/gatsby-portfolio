@@ -7,5 +7,16 @@ public_folder: "/images/uploads"
 collections:
         - name: "colors"
           label: "Colors"
-          folder: "data"
+          folder: "data/posts"
           create: true
+          filter: {field: "category", value: "Colors"}
+          fields:
+                - label: "Colors"
+                  name: "colors"
+                  widget: "list"
+                  field: {label: "Color", name: "color", widget: "string"}
+                - {label: "Title", name: "title", widget: "string"}
+                - {label: "Date", name: "date", widget: "date"}
+                - {label: "Category", name: "category", value: "Colors", widget: "hidden"}
+                - {label: "Blog Post Contnet", name: "body", widget: "markdown"}
+
