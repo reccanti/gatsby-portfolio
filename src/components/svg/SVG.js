@@ -32,9 +32,9 @@ const SVG = ({ title, description, ...props }) => {
     <svg {...generateAriaLabel(title, description)} {...props}>
       {title && <title id={generateUniqueId(title)}>{title}</title>}
       {description && (
-        <description id={generateUniqueId(description)}>
+        <desc id={generateUniqueId(description)}>
           {description}
-        </description>
+        </desc>
       )}
       {props.children}
     </svg>
