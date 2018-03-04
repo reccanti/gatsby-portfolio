@@ -1,0 +1,10 @@
+// Styles a hidden "skip link", which allows a user to skip into the main content of the page.
+#skip-link {
+    position: absolute;
+    top: 0;
+    right: 100%;
+
+    &:focus {
+        right: auto;
+    }
+}

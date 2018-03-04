@@ -101,7 +101,7 @@ const IndexPage = ({ data }) => {
   )
 
   return (
-    <div className={styles.index}>
+    <main id="main-content" className={styles.index}>
       {/* about section */}
       <section className={styles.about}>
         <img src={logo} alt="My personal logo" />
@@ -258,7 +258,7 @@ const IndexPage = ({ data }) => {
                </div>
                )}
                </section> */}
-    </div>
+    </main>
   )
 }
 

@@ -7,7 +7,7 @@ import styles from './colors.module.scss'
 const ColorPage = ({ data }) => {
   const { edges: entries } = data.allMarkdownRemark
   return (
-    <main className={styles.colorPage}>
+    <main id="main-content" className={styles.colorPage}>
       <header>
         <h1>Colors</h1>
         <p>Writing about colors, art and other things.</p>
@@ -26,7 +26,10 @@ const ColorPage = ({ data }) => {
 
 export const query = graphql`
   query colorBlogQuery {
-    allMarkdownRemark(filter: { frontmatter: { category: { eq: "Colors" } } }, sort: { fields:[frontmatter___date], order:DESC}) {
+    allMarkdownRemark(
+      filter: { frontmatter: { category: { eq: "Colors" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           id
