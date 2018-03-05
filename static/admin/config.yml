@@ -13,10 +13,12 @@ collections:
           fields:
                 - label: "Colors"
                   name: "colors"
-                  widget: "list"
-                  field: {label: "Color", name: "color", widget: "string"}
+                  widget: "palette"
+                  fields:
+                        - {label: "Color", name: "color", widget: "string"}
+                        - {label: "Width", name: "width", widget: "number"}
                 - {label: "Title", name: "title", widget: "string"}
                 - {label: "Date", name: "date", widget: "date"}
                 - {label: "Category", name: "category", value: "Colors", widget: "hidden"}
-                - {label: "Blog Post Contnet", name: "body", widget: "markdown"}
+                - {label: "Blog Post Content", name: "body", widget: "markdown"}
 
