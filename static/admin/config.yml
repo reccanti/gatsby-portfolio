@@ -15,10 +15,18 @@ collections:
                   name: "colors"
                   widget: "palette"
                   fields:
-                        - {label: "Color", name: "color", widget: "string"}
-                        - {label: "Width", name: "width", widget: "number"}
+                        - label: "Color"
+                          name: "color"
+                          widget: "string"
+                          default: "#000000"
+                        - label: "Width"
+                          name: "width"
+                          widget: "number"
+                          valueType: "int"
+                          min: 1
+                          default: 1
                 - {label: "Title", name: "title", widget: "string"}
                 - {label: "Date", name: "date", widget: "date"}
-                - {label: "Category", name: "category", value: "Colors", widget: "hidden"}
+                - {label: "Category", name: "category", value: "Colors", widget: "hidden", default: "Colors"}
                 - {label: "Blog Post Content", name: "body", widget: "markdown"}
 
