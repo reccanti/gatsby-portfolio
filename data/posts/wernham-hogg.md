@@ -1,19 +1,20 @@
 ---
 colors:
   - color: '#FBFBF8'
-    width: '1'
+    width: 1
   - color: '#F1EFE4'
-    width: '1'
+    width: 1
   - color: '#CEC69D'
-    width: '1'
+    width: 1
   - color: '#917777'
-    width: '1'
+    width: 1
   - color: '#778077'
-    width: '1'
+    width: 1
   - color: '#363429'
-    width: '1'
-title: Wernham Hogg
-date: 2018-03-06T02:50:25.118Z
+    width: 1
+category: "Colors"
+title: "Wernham Hogg"
+date: "2018-03-06T02:50:25.118Z"
 ---
 I started watching the UK version of _The Office_ this weekend, so I made a color palette inspired by that. The method I used to get the base colors was similar to the one I used in my previous palettes: taking screenshots, compiling them into a Sketch document, picking notable colors out of them. I noticed that these colors were overwhelmingly gray, and I think that's part of what makes that show so bleak.
 
