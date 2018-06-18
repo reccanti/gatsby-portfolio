@@ -4,15 +4,15 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.73",
+    "gatsby": "^1.9.272",
     "gatsby-image": "^1.0.31",
     "gatsby-link": "^1.6.22",
     "gatsby-plugin-google-analytics": "^1.0.14",
     "gatsby-plugin-netlify-cms": "^1.0.11",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-react-next": "^1.0.4",
-    "gatsby-plugin-sass": "^1.0.16",
-    "gatsby-source-filesystem": "^1.5.7",
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-json": "^1.0.14",
     "gatsby-transformer-remark": "^1.7.19",
     "gray-matter": "^3.1.1"
