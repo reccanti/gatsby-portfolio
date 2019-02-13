@@ -1,8 +1,7 @@
 import React from 'react'
 
-exports.onRenderBody = (
-  { setPreBodyComponents },
-  pluginOptions
+export const onRenderBody = (
+  { setPreBodyComponents }
 ) => {
     setPreBodyComponents([
         <a id="skip-link" href="#main-content">Skip To Main Content</a>
