@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import './common.scss'
+import './layout.scss'
 
 const Header = props => (
   <div
@@ -58,7 +58,7 @@ const TemplateWrapper = ({ children, data }) => (
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="theme-color" content="#ffffff" />
     </Helmet>
-    <div>{children()}</div>
+    <div>{children}</div>
   </div>
 )
 
