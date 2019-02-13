@@ -1,6 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby';
-import Link from 'gatsby-link'
+import { StaticQuery, graphql, Link } from 'gatsby';
 import Layout from './index-layout';
 import logo from '../images/icon-final.svg'
 
@@ -39,20 +38,20 @@ function filterPosts(items, nodeArray, metaArray) {
 }
 
 // specify the content to display for work and projects
-const work = {
-  cathedralCorporation: {
-    entry: 'customer',
-  },
-  ADS: {
-    entry: 'customer',
-  },
-  globalThinking: {
-    entry: 'stack',
-  },
-  fitbit: {
-    entry: 'collaboration',
-  },
-}
+// const work = {
+//   cathedralCorporation: {
+//     entry: 'customer',
+//   },
+//   ADS: {
+//     entry: 'customer',
+//   },
+//   globalThinking: {
+//     entry: 'stack',
+//   },
+//   fitbit: {
+//     entry: 'collaboration',
+//   },
+// }
 
 const projects = {
   learnVCS: {
