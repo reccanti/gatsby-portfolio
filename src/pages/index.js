@@ -158,7 +158,7 @@ const IndexPage = ({ data }) => {
             {/* about section */}
             <section className={styles.about}>
               <img src={logo} alt="My personal logo" />
-              <h1>Ben Wilcox</h1>
+              <h1>Blair Wilcox</h1>
               <ul>
                 <li>
                   <a href={data.site.siteMetadata.socialLinks.linkedin}>LinkedIn</a>
@@ -174,16 +174,15 @@ const IndexPage = ({ data }) => {
                     Email
               </a>
                 </li>
+                <p>
+                  She/her/hers
+              </p>
               </ul>
               <p>
                 I'm a web developer, designer, and beanie enthusiast based in Boston,
                 Massachusetts. Check out some of the projects I've worked on below!
                 Want to get in touch? Just send me an email at the address above.
           </p>
-              <p>
-                I'm working on making a new color palatte every day. You can read that{' '}
-                <Link to="/colors">here</Link>
-              </p>
             </section>
 
             {/* Projects section */}

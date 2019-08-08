@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Ben Wilcox's Portfolio`,
+    title: `Blair Wilcox's Portfolio`,
     socialLinks: {
-      email: `benjaminwilcox93@gmail.com`,
-      linkedin: `https://www.linkedin.com/in/benwilcox93`,
+      email: `blairwilcox93@gmail.com`,
+      linkedin: `https://www.linkedin.com/in/blairwilcox`,
       github: `https://github.com/reccanti`,
       codepen: `https://codepen.io/reccanti`,
     },
@@ -13,15 +13,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-          trackingId: "UA-69058558-2",
-          anonymize: true
+        trackingId: "UA-69058558-2",
+        anonymize: true
       }
     },
     {
-        resolve: `gatsby-plugin-netlify-cms`,
-        options: {
-            modulePath: `${__dirname}/src/cms/cms.js`
-        }
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`
+      }
     },
     `gatsby-transformer-json`,
     `gatsby-plugin-sass`,
